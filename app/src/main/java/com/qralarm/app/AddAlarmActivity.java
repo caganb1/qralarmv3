@@ -85,7 +85,9 @@ public class AddAlarmActivity extends AppCompatActivity {
         editAlarmId = getIntent().getIntExtra(EXTRA_ALARM_ID, -1);
         if (editAlarmId != -1) {
             loadExistingAlarm();
-            TextView tvTitle = findViewById(R.id.tv_toolbar_title);
+        } // EKSİK OLAN PARANTEZ BURAYA EKLENDİ
+
+        TextView tvTitle = findViewById(R.id.tv_toolbar_title);
         if (editAlarmId != -1) {
             tvTitle.setText(R.string.edit_alarm);
         } else {
@@ -275,8 +277,6 @@ public class AddAlarmActivity extends AppCompatActivity {
             }
         }
         return result;
-    }
-        return super.onOptionsItemSelected(item);
     }
 
     @Override
